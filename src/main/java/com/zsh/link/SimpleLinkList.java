@@ -4,7 +4,8 @@
 package com.zsh.link;
 
 /**
- * @author Administrator 简单链表
+ * @author Administrator 
+ * 简单链表
  */
 public class SimpleLinkList {
 	
