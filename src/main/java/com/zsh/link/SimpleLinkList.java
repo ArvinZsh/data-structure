@@ -74,17 +74,19 @@ public class SimpleLinkList {
 			return null;
 		}
 		SimpleLink current = first;
-		SimpleLink previous = null;
+		SimpleLink previous = first;
 		while(current.data != data) {
 			if(current.next == null) { // 最后一个节点
 				return null;
 			}
-			current = current.next;
 			previous = current;
+			current = current.next;
 		}
-		previous.next = current.next;
-		if(current.next == null) { // 最后一个节点
-			first = null;
+		
+		if(first == current) { // 删除的是第一个节点
+			first = current.next;
+		} else {
+			previous.next = current.next;
 		}
 		return current;
 	}
@@ -100,9 +102,11 @@ public class SimpleLinkList {
 		list.removeFirst();
 		list.display();
 		
-		System.out.println(list.findLink(0));
+		System.out.println("查找0 -> " + list.findLink(0));
 		
-		System.out.println(list.removeLink(3));
+		// 51
+		System.out.println("删除1 -> " + list.removeLink(1));
+		// 5
 		list.display();
 	}
 }

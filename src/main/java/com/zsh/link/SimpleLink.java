@@ -17,7 +17,7 @@ public class SimpleLink {
 
 	@Override
 	public String toString() {
-		return "SimpleLink [data=" + data + ", next=" + next + "]";
+		return "data=" + data;
 	}
 
 }
