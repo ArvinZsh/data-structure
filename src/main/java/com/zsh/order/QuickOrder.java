@@ -10,6 +10,7 @@ import com.zsh.arr.MyArr;
 /**
  * @author Administrator
  * 快速排序
+ * O(n*log(N))
  */
 public class QuickOrder {
 	
