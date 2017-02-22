@@ -5,23 +5,23 @@ package com.zsh.arr;
  * */
 public class MyArr {
 	/** 数组 */
-	private Object[] objArr;
+	private int[] objArr;
 	/** 数组拥有元素 */
 	private int nElems;
 	/** 默认新建大小 */
 	private int defaultSize = 10;
 	
 	public MyArr() {
-		objArr = new Object[defaultSize];
+		objArr = new int[defaultSize];
 	}
 	
 	public MyArr(int max) {
 		defaultSize = max;
-		objArr = new Object[max];
+		objArr = new int[max];
 	}
 	
 	/** 插入某个元素 - O(1) */
-	private boolean insert(Object o) {
+	private boolean insert(int o) {
 		
 		if(nElems == this.defaultSize) { // 已经到数组最大容量
 			return false;
