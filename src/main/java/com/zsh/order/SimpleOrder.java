@@ -7,7 +7,7 @@ package com.zsh.order;
  * @author Administrator
  *
  */
-public class Order {
+public class SimpleOrder {
 //	class Node {
 //		int value;
 //		Node next;
